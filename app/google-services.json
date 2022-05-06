@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265219971175",
+    "project_id": "fireauth-56c97",
+    "storage_bucket": "fireauth-56c97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265219971175:android:d41673ff89ee662c4f9cc2",
+        "android_client_info": {
+          "package_name": "com.mugerwa.fireauth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265219971175-08garm2oq3pp3unu11lliacg013j6tpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYF6C5YCcVzQKjKGB1V5js1xvjSEhghuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265219971175-08garm2oq3pp3unu11lliacg013j6tpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

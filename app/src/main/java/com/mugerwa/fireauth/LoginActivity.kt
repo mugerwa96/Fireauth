@@ -3,10 +3,8 @@ package com.mugerwa.fireauth
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import androidx.core.view.isVisible
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -27,14 +25,19 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
 //        binding
-        loginEmail=findViewById(R.id.loginEmail)
-        loginPassword=findViewById(R.id.loginPassword)
+        loginEmail=findViewById(R.id.registerEmail)
+        loginPassword=findViewById(R.id.registerPassword)
         loginButton=findViewById(R.id.registerBtn)
 //        actual values
 
         loginButton.setOnClickListener {
+            loginButton.isEnabled=false
+            var loginProgressBar=findViewById<ProgressBar>(R.id.progressBarLogin)
+            loginProgressBar.isVisible=true
+
             val email=loginEmail.text.toString().trim()
             val password=loginPassword.text.toString().trim()
+
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this) { task ->
                     if (task.isSuccessful) {
@@ -42,6 +45,7 @@ class LoginActivity : AppCompatActivity() {
                         val intent=Intent(this,MainActivity::class.java)
                         startActivity(intent)
                         finish()
+                        loginButton.isEnabled=true
                     } else {
                         // If sign in fails, display a message to the user.
                         Toast.makeText(this, "Authentication failed.",

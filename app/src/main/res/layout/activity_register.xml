@@ -13,7 +13,7 @@
 
 
         <EditText
-            android:id="@+id/loginEmail"
+            android:id="@+id/registerEmail"
             android:layout_width="wrap_content"
             android:layout_height="44dp"
             android:ems="10"
@@ -29,7 +29,7 @@
             app:layout_constraintVertical_bias="0.176" />
 
         <EditText
-            android:id="@+id/loginPassword"
+            android:id="@+id/registerPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -37,10 +37,10 @@
             android:inputType="textPersonName"
             android:text=""
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/loginEmail"
+            app:layout_constraintEnd_toEndOf="@+id/registerEmail"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/loginEmail"
-            app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+            app:layout_constraintStart_toStartOf="@+id/registerEmail"
+            app:layout_constraintTop_toBottomOf="@+id/registerEmail"
             app:layout_constraintVertical_bias="0.026" />
 
         <Button
@@ -49,10 +49,10 @@
             android:layout_height="wrap_content"
             android:text="Register"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/loginPassword"
+            app:layout_constraintEnd_toEndOf="@+id/registerPassword"
             app:layout_constraintHorizontal_bias="0.694"
-            app:layout_constraintStart_toStartOf="@+id/loginPassword"
-            app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+            app:layout_constraintStart_toStartOf="@+id/registerPassword"
+            app:layout_constraintTop_toBottomOf="@+id/registerPassword"
             app:layout_constraintVertical_bias="0.028" />
 
         <TextView
@@ -112,6 +112,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.268"
             app:srcCompat="@drawable/intellect" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.736" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

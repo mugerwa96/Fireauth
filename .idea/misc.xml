@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/cyrixpro/Fireauth/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/cyrixpro/Fireauth/app/src/main/res/layout/activity_login.xml" value="0.14" />
         <entry key="..\:/Users/cyrixpro/Fireauth/app/src/main/res/layout/activity_main.xml" value="0.16893115942028986" />
         <entry key="..\:/Users/cyrixpro/Fireauth/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/Users/cyrixpro/Fireauth/app/src/main/res/layout/activity_splash.xml" value="0.25" />
@@ -15,5 +15,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>
